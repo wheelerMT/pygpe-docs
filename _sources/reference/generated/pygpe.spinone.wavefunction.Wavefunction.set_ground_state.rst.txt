@@ -1,0 +1,6 @@
+﻿pygpe.spinone.wavefunction.Wavefunction.set\_ground\_state
+==========================================================
+
+.. currentmodule:: pygpe.spinone.wavefunction
+
+.. automethod:: Wavefunction.set_ground_state

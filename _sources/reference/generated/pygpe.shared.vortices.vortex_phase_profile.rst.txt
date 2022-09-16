@@ -1,0 +1,6 @@
+﻿pygpe.shared.vortices.vortex\_phase\_profile
+============================================
+
+.. currentmodule:: pygpe.shared.vortices
+
+.. autofunction:: vortex_phase_profile

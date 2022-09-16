@@ -1,0 +1,6 @@
+﻿pygpe.spintwo.wavefunction.Wavefunction.set\_custom\_components
+===============================================================
+
+.. currentmodule:: pygpe.spintwo.wavefunction
+
+.. automethod:: Wavefunction.set_custom_components

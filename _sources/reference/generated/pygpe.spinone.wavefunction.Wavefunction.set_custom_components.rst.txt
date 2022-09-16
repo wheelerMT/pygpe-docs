@@ -1,0 +1,6 @@
+﻿pygpe.spinone.wavefunction.Wavefunction.set\_custom\_components
+===============================================================
+
+.. currentmodule:: pygpe.spinone.wavefunction
+
+.. automethod:: Wavefunction.set_custom_components

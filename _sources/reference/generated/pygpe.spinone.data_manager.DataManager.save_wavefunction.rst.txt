@@ -1,0 +1,6 @@
+﻿pygpe.spinone.data\_manager.DataManager.save\_wavefunction
+==========================================================
+
+.. currentmodule:: pygpe.spinone.data_manager
+
+.. automethod:: DataManager.save_wavefunction

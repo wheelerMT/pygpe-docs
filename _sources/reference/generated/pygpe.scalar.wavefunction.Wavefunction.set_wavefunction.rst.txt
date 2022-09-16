@@ -1,0 +1,6 @@
+﻿pygpe.scalar.wavefunction.Wavefunction.set\_wavefunction
+========================================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. automethod:: Wavefunction.set_wavefunction

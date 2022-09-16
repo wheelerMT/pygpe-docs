@@ -1,0 +1,6 @@
+﻿pygpe.scalar.wavefunction.Wavefunction.density
+==============================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. automethod:: Wavefunction.density

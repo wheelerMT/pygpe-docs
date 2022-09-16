@@ -1,0 +1,6 @@
+﻿pygpe.scalar.wavefunction.Wavefunction.ifft
+===========================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. automethod:: Wavefunction.ifft

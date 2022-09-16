@@ -1,0 +1,28 @@
+﻿pygpe.spintwo.wavefunction.Wavefunction
+=======================================
+
+.. currentmodule:: pygpe.spintwo.wavefunction
+
+.. autoclass:: Wavefunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Wavefunction.__init__
+      ~Wavefunction.add_noise_to_components
+      ~Wavefunction.apply_phase
+      ~Wavefunction.fft
+      ~Wavefunction.ifft
+      ~Wavefunction.set_custom_components
+      ~Wavefunction.set_ground_state
+   
+   
+
+   
+   
+   

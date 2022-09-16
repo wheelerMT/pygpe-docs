@@ -1,0 +1,6 @@
+﻿pygpe.scalar.evolution.step\_wavefunction
+=========================================
+
+.. currentmodule:: pygpe.scalar.evolution
+
+.. autofunction:: step_wavefunction
