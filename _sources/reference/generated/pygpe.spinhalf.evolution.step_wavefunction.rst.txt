@@ -1,0 +1,6 @@
+﻿pygpe.spinhalf.evolution.step\_wavefunction
+===========================================
+
+.. currentmodule:: pygpe.spinhalf.evolution
+
+.. autofunction:: step_wavefunction

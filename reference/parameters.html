@@ -323,6 +323,11 @@
      </li>
     </ul>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="wavefunction.spinhalf.html">
+     Two-component BEC wavefunction
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="wavefunction.spinone.html">
      Spin-1 BEC wavefunction
@@ -446,6 +451,11 @@
      </li>
     </ul>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="evolution.spinhalf.html">
+     Two-component BEC evolution functions
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="evolution.spinone.html">
      Spin-1 BEC evolution functions
@@ -518,6 +528,11 @@
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="datamanager.spinhalf.html">
+     Two-component BEC DataManager
+    </a>
    </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="datamanager.spinone.html">
@@ -664,11 +679,54 @@ functions work correctly.</p>
 </tbody>
 </table>
 </section>
+<section id="two-component-dictionary">
+<h2>Two-component dictionary<a class="headerlink" href="#two-component-dictionary" title="Permalink to this heading">#</a></h2>
+<p>The parameters required for the two-component system are in the table below</p>
+<table class="table" id="id2">
+<caption><span class="caption-text">Two-component system parameters</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Dictionary key</p></th>
+<th class="head"><p><cite>dtype</cite></p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>g_plus</p></td>
+<td><p><cite>float</cite> or <cite>cupy.ndarray</cite></p></td>
+<td><p>Interaction strength of plus component</p></td>
+</tr>
+<tr class="row-odd"><td><p>g_minus</p></td>
+<td><p><cite>float</cite> or <cite>cupy.ndarray</cite></p></td>
+<td><p>Interaction strength of minus component</p></td>
+</tr>
+<tr class="row-even"><td><p>g_pm</p></td>
+<td><p><cite>float</cite> or <cite>cupy.ndarray</cite></p></td>
+<td><p>Inter-component interaction strength</p></td>
+</tr>
+<tr class="row-odd"><td><p>trap</p></td>
+<td><p><cite>float</cite> or <cite>cupy.ndarray</cite></p></td>
+<td><p>Trapping potential</p></td>
+</tr>
+<tr class="row-even"><td><p>nt</p></td>
+<td><p><cite>int</cite></p></td>
+<td><p>Number of time steps</p></td>
+</tr>
+<tr class="row-odd"><td><p>dt</p></td>
+<td><p><cite>float</cite> or <cite>complex</cite></p></td>
+<td><p>Numerical time step</p></td>
+</tr>
+<tr class="row-even"><td><p>t</p></td>
+<td><p><cite>float</cite></p></td>
+<td><p>Current simulation time</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="spin-1-dictionary">
 <h2>Spin-1 dictionary<a class="headerlink" href="#spin-1-dictionary" title="Permalink to this heading">#</a></h2>
 <p>The parameters required for the spin-1 system are in the table below</p>
-<table class="table" id="id2">
-<caption><span class="caption-text">Spin-1 system parameters</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
+<table class="table" id="id3">
+<caption><span class="caption-text">Spin-1 system parameters</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Dictionary key</p></th>
 <th class="head"><p><cite>dtype</cite></p></th>
@@ -714,8 +772,8 @@ functions work correctly.</p>
 <section id="spin-2-dictionary">
 <h2>Spin-2 dictionary<a class="headerlink" href="#spin-2-dictionary" title="Permalink to this heading">#</a></h2>
 <p>The parameters required for the spin-2 system are in the table below</p>
-<table class="table" id="id3">
-<caption><span class="caption-text">Spin-2 system parameters</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<table class="table" id="id4">
+<caption><span class="caption-text">Spin-2 system parameters</span><a class="headerlink" href="#id4" title="Permalink to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Dictionary key</p></th>
 <th class="head"><p><cite>dtype</cite></p></th>
@@ -805,6 +863,11 @@ functions work correctly.</p>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scalar-dictionary">
    Scalar dictionary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#two-component-dictionary">
+   Two-component dictionary
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">

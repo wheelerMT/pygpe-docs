@@ -1,0 +1,6 @@
+﻿pygpe.spinhalf.wavefunction.Wavefunction.apply\_phase
+=====================================================
+
+.. currentmodule:: pygpe.spinhalf.wavefunction
+
+.. automethod:: Wavefunction.apply_phase

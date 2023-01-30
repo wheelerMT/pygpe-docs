@@ -1,0 +1,6 @@
+﻿pygpe.spinhalf.data\_manager.DataManager.save\_wavefunction
+===========================================================
+
+.. currentmodule:: pygpe.spinhalf.data_manager
+
+.. automethod:: DataManager.save_wavefunction

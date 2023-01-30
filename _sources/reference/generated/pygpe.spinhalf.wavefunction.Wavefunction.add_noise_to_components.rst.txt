@@ -1,0 +1,6 @@
+﻿pygpe.spinhalf.wavefunction.Wavefunction.add\_noise\_to\_components
+===================================================================
+
+.. currentmodule:: pygpe.spinhalf.wavefunction
+
+.. automethod:: Wavefunction.add_noise_to_components

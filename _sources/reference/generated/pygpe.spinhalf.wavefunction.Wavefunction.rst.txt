@@ -1,0 +1,28 @@
+﻿pygpe.spinhalf.wavefunction.Wavefunction
+========================================
+
+.. currentmodule:: pygpe.spinhalf.wavefunction
+
+.. autoclass:: Wavefunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Wavefunction.__init__
+      ~Wavefunction.add_noise_to_components
+      ~Wavefunction.apply_phase
+      ~Wavefunction.density
+      ~Wavefunction.fft
+      ~Wavefunction.ifft
+      ~Wavefunction.set_wavefunction_components
+   
+   
+
+   
+   
+   

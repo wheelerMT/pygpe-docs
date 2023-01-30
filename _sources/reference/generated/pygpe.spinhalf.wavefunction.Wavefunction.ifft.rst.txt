@@ -1,0 +1,6 @@
+﻿pygpe.spinhalf.wavefunction.Wavefunction.ifft
+=============================================
+
+.. currentmodule:: pygpe.spinhalf.wavefunction
+
+.. automethod:: Wavefunction.ifft
