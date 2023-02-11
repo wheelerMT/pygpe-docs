@@ -6,42 +6,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Two-component BEC wavefunction &#8212; PyGPE 1.1.0 documentation</title>
-  <script>
+    <title>Two-component BEC wavefunction &#8212; PyGPE 1.1.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
 
   
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pygpe.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/design-tabs.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/wavefunction.spinhalf';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pygpe.spinhalf.wavefunction.Wavefunction" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.html" />
+    <link rel="next" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html" />
     <link rel="prev" title="pygpe.scalar.wavefunction.Wavefunction.density" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
@@ -49,6 +53,10 @@
   
   
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   
   <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
@@ -64,7 +72,7 @@
     <div class="search-button__search-container">
       
 <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form>
@@ -74,7 +82,7 @@
   
   <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
-      <span class="fas fa-bars"></span>
+      <span class="fa-solid fa-bars"></span>
   </label>
   <div id="navbar-start">
     
@@ -94,7 +102,7 @@
 
   
   
-    <p class="title logo__title">PyGPE 1.1.0 documentation</p>
+    <p class="title logo__title">PyGPE 1.1.1 documentation</p>
   
 </a>
     
@@ -111,18 +119,18 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                <li class="nav-item">
-                    <a class="nav-link" href="../user/starter_guide.html">
-                        PyGPE: An introduction
-                    </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../user/starter_guide.html">
+                        Starter Guide
+                      </a>
+                    </li>
                 
 
-                <li class="nav-item current active">
-                    <a class="nav-link" href="index.html">
-                        PyGPE API Reference
-                    </a>
-                </li>
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        API Reference
+                      </a>
+                    </li>
                 
     </ul>
 </nav>
@@ -131,19 +139,21 @@
     </div>
 
     <div id="navbar-end">
-      <div class="navbar-end-item navbar-end__search-button-container">
-        
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
-  <i class="fas fa-search"></i>
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
-      </div>
+        </div>
+      
       
       <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
-</span>
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
       </div>
       
       <div class="navbar-end-item">
@@ -156,15 +166,17 @@
 
 
   
-  <div class="search-button-container--mobile">
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
-  <i class="fas fa-search"></i>
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
-  </div>
+    </div>
+  
 
   
   <label class="sidebar-toggle secondary-toggle" for="__secondary">
-      <span class="fas fa-outdent"></span>
+      <span class="fa-solid fa-outdent"></span>
   </label>
   
 
@@ -190,18 +202,18 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                <li class="nav-item">
-                    <a class="nav-link" href="../user/starter_guide.html">
-                        PyGPE: An introduction
-                    </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../user/starter_guide.html">
+                        Starter Guide
+                      </a>
+                    </li>
                 
 
-                <li class="nav-item current active">
-                    <a class="nav-link" href="index.html">
-                        PyGPE API Reference
-                    </a>
-                </li>
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        API Reference
+                      </a>
+                    </li>
                 
     </ul>
 </nav>
@@ -215,11 +227,11 @@
     <div class="sidebar-header-items__end">
       
       <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
-</span>
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
       </div>
       
       <div class="navbar-end-item">
@@ -239,446 +251,106 @@
   </p>
   <div class="bd-toc-item navbar-nav">
     <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="grid.html">
-   The
-   <code class="xref py py-class docutils literal notranslate">
-    <span class="pre">
-     Grid
-    </span>
-   </code>
-   class
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="generated/pygpe.shared.grid.Grid.html">
-     pygpe.shared.grid.Grid
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="parameters.html">
-   Condensate and time parameters
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="wavefunction.html">
-   Wavefunction
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="wavefunction.scalar.html">
-     Scalar BEC wavefunction
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.html">
-       pygpe.scalar.wavefunction.Wavefunction
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html">
-       pygpe.scalar.wavefunction.Wavefunction.set_wavefunction
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.add_noise.html">
-       pygpe.scalar.wavefunction.Wavefunction.add_noise
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.apply_phase.html">
-       pygpe.scalar.wavefunction.Wavefunction.apply_phase
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.fft.html">
-       pygpe.scalar.wavefunction.Wavefunction.fft
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.ifft.html">
-       pygpe.scalar.wavefunction.Wavefunction.ifft
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html">
-       pygpe.scalar.wavefunction.Wavefunction.density
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
-     Two-component BEC wavefunction
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-4">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.html">
-       pygpe.spinhalf.wavefunction.Wavefunction
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components.html">
-       pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components.html">
-       pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.apply_phase.html">
-       pygpe.spinhalf.wavefunction.Wavefunction.apply_phase
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.fft.html">
-       pygpe.spinhalf.wavefunction.Wavefunction.fft
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.ifft.html">
-       pygpe.spinhalf.wavefunction.Wavefunction.ifft
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="wavefunction.spinone.html">
-     Spin-1 BEC wavefunction
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-5">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.html">
-       pygpe.spinone.wavefunction.Wavefunction
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.set_ground_state.html">
-       pygpe.spinone.wavefunction.Wavefunction.set_ground_state
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.set_custom_components.html">
-       pygpe.spinone.wavefunction.Wavefunction.set_custom_components
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.add_noise_to_components.html">
-       pygpe.spinone.wavefunction.Wavefunction.add_noise_to_components
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.apply_phase.html">
-       pygpe.spinone.wavefunction.Wavefunction.apply_phase
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.fft.html">
-       pygpe.spinone.wavefunction.Wavefunction.fft
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.wavefunction.Wavefunction.ifft.html">
-       pygpe.spinone.wavefunction.Wavefunction.ifft
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="wavefunction.spintwo.html">
-     Spin-2 BEC wavefunction
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-6">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.html">
-       pygpe.spintwo.wavefunction.Wavefunction
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.set_ground_state.html">
-       pygpe.spintwo.wavefunction.Wavefunction.set_ground_state
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.set_custom_components.html">
-       pygpe.spintwo.wavefunction.Wavefunction.set_custom_components
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.add_noise_to_components.html">
-       pygpe.spintwo.wavefunction.Wavefunction.add_noise_to_components
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.apply_phase.html">
-       pygpe.spintwo.wavefunction.Wavefunction.apply_phase
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.fft.html">
-       pygpe.spintwo.wavefunction.Wavefunction.fft
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.wavefunction.Wavefunction.ifft.html">
-       pygpe.spintwo.wavefunction.Wavefunction.ifft
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="evolution.html">
-   Evolution functions
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-7">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="evolution.scalar.html">
-     Scalar BEC evolution functions
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-8">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.evolution.step_wavefunction.html">
-       pygpe.scalar.evolution.step_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="evolution.spinhalf.html">
-     Two-component BEC evolution functions
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-9">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.evolution.step_wavefunction.html">
-       pygpe.spinhalf.evolution.step_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="evolution.spinone.html">
-     Spin-1 BEC evolution functions
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.evolution.step_wavefunction.html">
-       pygpe.spinone.evolution.step_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="evolution.spintwo.html">
-     Spin-2 BEC evolution functions
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-11">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.evolution.step_wavefunction.html">
-       pygpe.spinone.evolution.step_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="datamanager.html">
-   The DataManager class
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-12">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="datamanager.scalar.html">
-     Scalar BEC DataManager
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-13">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.data_manager.DataManager.html">
-       pygpe.scalar.data_manager.DataManager
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.data_manager.DataManager.save_initial_parameters.html">
-       pygpe.scalar.data_manager.DataManager.save_initial_parameters
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.scalar.data_manager.DataManager.save_wavefunction.html">
-       pygpe.scalar.data_manager.DataManager.save_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="datamanager.spinhalf.html">
-     Two-component BEC DataManager
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-14">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.data_manager.DataManager.html">
-       pygpe.spinhalf.data_manager.DataManager
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.data_manager.DataManager.save_initial_parameters.html">
-       pygpe.spinhalf.data_manager.DataManager.save_initial_parameters
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinhalf.data_manager.DataManager.save_wavefunction.html">
-       pygpe.spinhalf.data_manager.DataManager.save_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="datamanager.spinone.html">
-     Spin-1 BEC DataManager
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-15">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.data_manager.DataManager.html">
-       pygpe.spinone.data_manager.DataManager
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.data_manager.DataManager.save_initial_parameters.html">
-       pygpe.spinone.data_manager.DataManager.save_initial_parameters
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spinone.data_manager.DataManager.save_wavefunction.html">
-       pygpe.spinone.data_manager.DataManager.save_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="datamanager.spintwo.html">
-     Spin-2 BEC DataManager
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-16">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.data_manager.DataManager.html">
-       pygpe.spintwo.data_manager.DataManager
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.data_manager.DataManager.save_initial_parameters.html">
-       pygpe.spintwo.data_manager.DataManager.save_initial_parameters
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="generated/pygpe.spintwo.data_manager.DataManager.save_wavefunction.html">
-       pygpe.spintwo.data_manager.DataManager.save_wavefunction
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="vortices.html">
-   Vortices
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-17">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="generated/pygpe.shared.vortices.vortex_phase_profile.html">
-     pygpe.shared.vortices.vortex_phase_profile
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="grid.html">The <code class="xref py py-class docutils literal notranslate"><span class="pre">Grid</span></code> class</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/pygpe.shared.grid.Grid.html">pygpe.shared.grid.Grid</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="parameters.html">Condensate and time parameters</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wavefunction.html">Wavefunction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="wavefunction.scalar.html">Scalar BEC wavefunction</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.html">pygpe.scalar.wavefunction.ScalarWavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html">pygpe.scalar.wavefunction.Wavefunction.set_wavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.add_noise.html">pygpe.scalar.wavefunction.Wavefunction.add_noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.apply_phase.html">pygpe.scalar.wavefunction.Wavefunction.apply_phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.fft.html">pygpe.scalar.wavefunction.Wavefunction.fft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.ifft.html">pygpe.scalar.wavefunction.Wavefunction.ifft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html">pygpe.scalar.wavefunction.Wavefunction.density</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Two-component BEC wavefunction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density.html">pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="wavefunction.spinone.html">Spin-1 BEC wavefunction</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.html">pygpe.spinone.wavefunction.SpinOneWavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.set_ground_state.html">pygpe.spinone.wavefunction.SpinOneWavefunction.set_ground_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.set_wavefunction.html">pygpe.spinone.wavefunction.SpinOneWavefunction.set_wavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.add_noise.html">pygpe.spinone.wavefunction.SpinOneWavefunction.add_noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.apply_phase.html">pygpe.spinone.wavefunction.SpinOneWavefunction.apply_phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.fft.html">pygpe.spinone.wavefunction.SpinOneWavefunction.fft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.ifft.html">pygpe.spinone.wavefunction.SpinOneWavefunction.ifft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.wavefunction.SpinOneWavefunction.density.html">pygpe.spinone.wavefunction.SpinOneWavefunction.density</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="wavefunction.spintwo.html">Spin-2 BEC wavefunction</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_ground_state.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_ground_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_wavefunction.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_wavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.add_noise.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.add_noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.apply_phase.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.apply_phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.fft.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.fft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.ifft.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.ifft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.density.html">pygpe.spintwo.wavefunction.SpinTwoWavefunction.density</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="evolution.html">Evolution functions</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="evolution.scalar.html">Scalar BEC evolution functions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.evolution.step_wavefunction.html">pygpe.scalar.evolution.step_wavefunction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="evolution.spinhalf.html">Two-component BEC evolution functions</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.evolution.step_wavefunction.html">pygpe.spinhalf.evolution.step_wavefunction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="evolution.spinone.html">Spin-1 BEC evolution functions</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.evolution.step_wavefunction.html">pygpe.spinone.evolution.step_wavefunction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="evolution.spintwo.html">Spin-2 BEC evolution functions</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.evolution.step_wavefunction.html">pygpe.spinone.evolution.step_wavefunction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="datamanager.html">The DataManager class</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="datamanager.scalar.html">Scalar BEC DataManager</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.data_manager.DataManager.html">pygpe.scalar.data_manager.DataManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.data_manager.DataManager.save_initial_parameters.html">pygpe.scalar.data_manager.DataManager.save_initial_parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.data_manager.DataManager.save_wavefunction.html">pygpe.scalar.data_manager.DataManager.save_wavefunction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="datamanager.spinhalf.html">Two-component BEC DataManager</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.data_manager.DataManager.html">pygpe.spinhalf.data_manager.DataManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.data_manager.DataManager.save_initial_parameters.html">pygpe.spinhalf.data_manager.DataManager.save_initial_parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinhalf.data_manager.DataManager.save_wavefunction.html">pygpe.spinhalf.data_manager.DataManager.save_wavefunction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="datamanager.spinone.html">Spin-1 BEC DataManager</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.data_manager.DataManager.html">pygpe.spinone.data_manager.DataManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.data_manager.DataManager.save_initial_parameters.html">pygpe.spinone.data_manager.DataManager.save_initial_parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spinone.data_manager.DataManager.save_wavefunction.html">pygpe.spinone.data_manager.DataManager.save_wavefunction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="datamanager.spintwo.html">Spin-2 BEC DataManager</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.data_manager.DataManager.html">pygpe.spintwo.data_manager.DataManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.data_manager.DataManager.save_initial_parameters.html">pygpe.spintwo.data_manager.DataManager.save_initial_parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.spintwo.data_manager.DataManager.save_wavefunction.html">pygpe.spintwo.data_manager.DataManager.save_wavefunction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="vortices.html">Vortices</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/pygpe.shared.vortices.vortex_phase_profile.html">pygpe.shared.vortices.vortex_phase_profile</a></li>
+</ul>
+</li>
 </ul>
 
   </div>
@@ -693,8 +365,11 @@
     </div>
   </div>
 
+  
+  <div id="rtd-footer-container"></div>
+
       </div>
-      <main class="bd-main">
+      <main id="main-content" class="bd-main">
         
         
         <div class="bd-content">
@@ -714,7 +389,7 @@ manipulating and using the wavefunction.</p>
 <p>Constructing the Wavefunction object is done through the constructor</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.html#pygpe.spinhalf.wavefunction.Wavefunction" title="pygpe.spinhalf.wavefunction.Wavefunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wavefunction</span></code></a>(grid)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction</span></code></a>(grid)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -727,19 +402,19 @@ manipulating and using the wavefunction.</p>
 <p>Below are the methods associated with the initial state.</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components.html#pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components" title="pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wavefunction.set_wavefunction_components</span></code></a>(...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction.set_wavefunction</span></code></a>(...)</p></td>
 <td><p>Set the wavefunction components to the specified arrays.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components.html#pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components" title="pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wavefunction.add_noise_to_components</span></code></a>(...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction.add_noise</span></code></a>(components, ...)</p></td>
 <td><p>Adds noise to the specified wavefunction components using a normal distribution.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.apply_phase.html#pygpe.spinhalf.wavefunction.Wavefunction.apply_phase" title="pygpe.spinhalf.wavefunction.Wavefunction.apply_phase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wavefunction.apply_phase</span></code></a>(phase[, components])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction.apply_phase</span></code></a>(phase[, ...])</p></td>
 <td><p>Applies a given phase to the specified condensate components.</p></td>
 </tr>
 </tbody>
 </table>
-<p>The <cite>set_wavefunction_components</cite> method is used to set the initial state of the two-component system.</p>
-<p>The <cite>add_noise_to_components</cite> method adds noise to each grid point of the wavefunction for the specified components.
+<p>The <cite>set_wavefunction</cite> method is used to set the initial state of the two-component system.</p>
+<p>The <cite>add_noise</cite> method adds noise to each grid point of the wavefunction for the specified components.
 The noise is drawn from a uniform distribution with the mean and standard deviation specified in the function signature.
 Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified wavefunction components as
 <span class="math notranslate nohighlight">\(\psi_m\rightarrow\psi_m e^{i\phi}\)</span> for phase <span class="math notranslate nohighlight">\(\phi\)</span> and component <span class="math notranslate nohighlight">\(m \in \{+, 0, -\}\)</span>.</p>
@@ -749,18 +424,21 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
 <p>The methods below fall under the miscellaneous category and are self-explanatory.</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.fft.html#pygpe.spinhalf.wavefunction.Wavefunction.fft" title="pygpe.spinhalf.wavefunction.Wavefunction.fft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wavefunction.fft</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction.fft</span></code></a>()</p></td>
 <td><p>Fourier transforms real-space components and updates Fourier-space components.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.ifft.html#pygpe.spinhalf.wavefunction.Wavefunction.ifft" title="pygpe.spinhalf.wavefunction.Wavefunction.ifft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wavefunction.ifft</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction.ifft</span></code></a>()</p></td>
 <td><p>Inverse Fourier transforms Fourier-space components and updates real-space components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinHalfWavefunction.density</span></code></a>(components)</p></td>
+<td><p>Calculates the density of the specified component(s).</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="attributes">
 <h3>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading">#</a></h3>
-<p>See <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.html#pygpe.spinhalf.wavefunction.Wavefunction" title="pygpe.spinhalf.wavefunction.Wavefunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Wavefunction</span></code></a> for list of class attributes (variables).</p>
+<p>See <a class="reference internal" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">SpinHalfWavefunction</span></code></a> for list of class attributes (variables).</p>
 </section>
 </section>
 </section>
@@ -774,18 +452,18 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
   <a class='left-prev' id="prev-link" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html" title="previous page">
-      <i class="fas fa-angle-left"></i>
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
           <p class="prev-next-title">pygpe.scalar.wavefunction.Wavefunction.density</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="generated/pygpe.spinhalf.wavefunction.Wavefunction.html" title="next page">
+  <a class='right-next' id="next-link" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">pygpe.spinhalf.wavefunction.Wavefunction</p>
+      <p class="prev-next-title">pygpe.spinhalf.wavefunction.SpinHalfWavefunction</p>
   </div>
-  <i class="fas fa-angle-right"></i>
+  <i class="fa-solid fa-angle-right"></i>
   </a>
 </div>
             </footer>
@@ -799,7 +477,7 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
 <div class="toc-item">
   
 <div class="tocsection onthispage">
-    <i class="fas fa-list"></i> On this page
+    <i class="fa-solid fa-list"></i> On this page
 </div>
 <nav id="bd-toc-nav" class="page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -832,13 +510,18 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
 
 <div class="toc-item">
   
+<div id="searchbox"></div>
+</div>
+
+<div class="toc-item">
+  
 </div>
 
 <div class="toc-item">
   
 <div class="tocsection sourcelink">
     <a href="../_sources/reference/wavefunction.spinhalf.rst.txt">
-        <i class="fas fa-file-alt"></i> Show Source
+        <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
 </div>
 
@@ -861,7 +544,8 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
   
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
 
   <footer class="bd-footer"><div class="bd-footer__inner container">
   
@@ -876,9 +560,19 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
   </div>
   
   <div class="footer-item">
+    <p class="theme-version">
+    Built with the
+    <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">
+        PyData Sphinx Theme
+    </a>
+    0.12.0.
+</p>
+  </div>
+  
+  <div class="footer-item">
     
 <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
 
   </div>

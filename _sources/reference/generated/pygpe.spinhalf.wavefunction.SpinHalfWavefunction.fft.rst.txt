@@ -1,0 +1,6 @@
+﻿pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft
+====================================================
+
+.. currentmodule:: pygpe.spinhalf.wavefunction
+
+.. automethod:: SpinHalfWavefunction.fft

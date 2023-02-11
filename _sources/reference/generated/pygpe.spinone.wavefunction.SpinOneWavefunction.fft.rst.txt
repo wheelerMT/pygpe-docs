@@ -1,0 +1,6 @@
+﻿pygpe.spinone.wavefunction.SpinOneWavefunction.fft
+==================================================
+
+.. currentmodule:: pygpe.spinone.wavefunction
+
+.. automethod:: SpinOneWavefunction.fft

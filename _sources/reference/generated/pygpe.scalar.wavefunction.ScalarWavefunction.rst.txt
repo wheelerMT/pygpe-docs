@@ -1,0 +1,28 @@
+﻿pygpe.scalar.wavefunction.ScalarWavefunction
+============================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. autoclass:: ScalarWavefunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ScalarWavefunction.__init__
+      ~ScalarWavefunction.add_noise
+      ~ScalarWavefunction.apply_phase
+      ~ScalarWavefunction.density
+      ~ScalarWavefunction.fft
+      ~ScalarWavefunction.ifft
+      ~ScalarWavefunction.set_wavefunction
+   
+   
+
+   
+   
+   

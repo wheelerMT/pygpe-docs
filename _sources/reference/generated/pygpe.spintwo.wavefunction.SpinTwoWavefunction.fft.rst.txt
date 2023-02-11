@@ -1,0 +1,6 @@
+﻿pygpe.spintwo.wavefunction.SpinTwoWavefunction.fft
+==================================================
+
+.. currentmodule:: pygpe.spintwo.wavefunction
+
+.. automethod:: SpinTwoWavefunction.fft

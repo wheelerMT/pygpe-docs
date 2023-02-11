@@ -1,0 +1,6 @@
+﻿pygpe.spintwo.wavefunction.SpinTwoWavefunction.apply\_phase
+===========================================================
+
+.. currentmodule:: pygpe.spintwo.wavefunction
+
+.. automethod:: SpinTwoWavefunction.apply_phase

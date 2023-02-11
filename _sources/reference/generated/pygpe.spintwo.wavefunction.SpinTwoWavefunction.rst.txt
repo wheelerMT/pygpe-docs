@@ -1,0 +1,29 @@
+﻿pygpe.spintwo.wavefunction.SpinTwoWavefunction
+==============================================
+
+.. currentmodule:: pygpe.spintwo.wavefunction
+
+.. autoclass:: SpinTwoWavefunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SpinTwoWavefunction.__init__
+      ~SpinTwoWavefunction.add_noise
+      ~SpinTwoWavefunction.apply_phase
+      ~SpinTwoWavefunction.density
+      ~SpinTwoWavefunction.fft
+      ~SpinTwoWavefunction.ifft
+      ~SpinTwoWavefunction.set_ground_state
+      ~SpinTwoWavefunction.set_wavefunction
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+﻿pygpe.spintwo.wavefunction.SpinTwoWavefunction.density
+======================================================
+
+.. currentmodule:: pygpe.spintwo.wavefunction
+
+.. automethod:: SpinTwoWavefunction.density

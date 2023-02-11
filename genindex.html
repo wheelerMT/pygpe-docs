@@ -5,36 +5,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; PyGPE 1.1.0 documentation</title>
-  <script>
+    <title>Index &#8212; PyGPE 1.1.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
 
   
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/6.1.2/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/pygpe.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
     <link rel="index" title="Index" href="#" />
@@ -45,6 +49,10 @@
   
   
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   
   <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
@@ -60,7 +68,7 @@
     <div class="search-button__search-container">
       
 <form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form>
@@ -70,7 +78,7 @@
   
   <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
-      <span class="fas fa-bars"></span>
+      <span class="fa-solid fa-bars"></span>
   </label>
   <div id="navbar-start">
     
@@ -90,7 +98,7 @@
 
   
   
-    <p class="title logo__title">PyGPE 1.1.0 documentation</p>
+    <p class="title logo__title">PyGPE 1.1.1 documentation</p>
   
 </a>
     
@@ -107,18 +115,18 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                <li class="nav-item">
-                    <a class="nav-link" href="user/starter_guide.html">
-                        PyGPE: An introduction
-                    </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="user/starter_guide.html">
+                        Starter Guide
+                      </a>
+                    </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="reference/index.html">
-                        PyGPE API Reference
-                    </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="reference/index.html">
+                        API Reference
+                      </a>
+                    </li>
                 
     </ul>
 </nav>
@@ -127,19 +135,21 @@
     </div>
 
     <div id="navbar-end">
-      <div class="navbar-end-item navbar-end__search-button-container">
-        
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
-  <i class="fas fa-search"></i>
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
-      </div>
+        </div>
+      
       
       <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
-</span>
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
       </div>
       
       <div class="navbar-end-item">
@@ -152,15 +162,17 @@
 
 
   
-  <div class="search-button-container--mobile">
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
-  <i class="fas fa-search"></i>
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
-  </div>
+    </div>
+  
 
   
   <label class="sidebar-toggle secondary-toggle" for="__secondary">
-      <span class="fas fa-outdent"></span>
+      <span class="fa-solid fa-outdent"></span>
   </label>
   
 
@@ -186,18 +198,18 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                <li class="nav-item">
-                    <a class="nav-link" href="user/starter_guide.html">
-                        PyGPE: An introduction
-                    </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="user/starter_guide.html">
+                        Starter Guide
+                      </a>
+                    </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="reference/index.html">
-                        PyGPE API Reference
-                    </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="reference/index.html">
+                        API Reference
+                      </a>
+                    </li>
                 
     </ul>
 </nav>
@@ -211,11 +223,11 @@
     <div class="sidebar-header-items__end">
       
       <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
-</span>
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
       </div>
       
       <div class="navbar-end-item">
@@ -235,8 +247,11 @@
     </div>
   </div>
 
+  
+  <div id="rtd-footer-container"></div>
+
       </div>
-      <main class="bd-main">
+      <main id="main-content" class="bd-main">
         
         
         <div class="bd-content">
@@ -261,7 +276,6 @@
  | <a href="#I"><strong>I</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#V"><strong>V</strong></a>
- | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="_">_</h2>
@@ -270,21 +284,21 @@
       <li><a href="reference/generated/pygpe.scalar.data_manager.DataManager.html#pygpe.scalar.data_manager.DataManager.__init__">__init__() (pygpe.scalar.data_manager.DataManager method)</a>
 
       <ul>
-        <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.html#pygpe.scalar.wavefunction.Wavefunction.__init__">(pygpe.scalar.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.scalar.wavefunction.ScalarWavefunction.html#pygpe.scalar.wavefunction.ScalarWavefunction.__init__">(pygpe.scalar.wavefunction.ScalarWavefunction method)</a>
 </li>
         <li><a href="reference/generated/pygpe.shared.grid.Grid.html#pygpe.shared.grid.Grid.__init__">(pygpe.shared.grid.Grid method)</a>
 </li>
         <li><a href="reference/generated/pygpe.spinhalf.data_manager.DataManager.html#pygpe.spinhalf.data_manager.DataManager.__init__">(pygpe.spinhalf.data_manager.DataManager method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.html#pygpe.spinhalf.wavefunction.Wavefunction.__init__">(pygpe.spinhalf.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.__init__">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
         <li><a href="reference/generated/pygpe.spinone.data_manager.DataManager.html#pygpe.spinone.data_manager.DataManager.__init__">(pygpe.spinone.data_manager.DataManager method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.html#pygpe.spinone.wavefunction.Wavefunction.__init__">(pygpe.spinone.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.html#pygpe.spinone.wavefunction.SpinOneWavefunction.__init__">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
 </li>
         <li><a href="reference/generated/pygpe.spintwo.data_manager.DataManager.html#pygpe.spintwo.data_manager.DataManager.__init__">(pygpe.spintwo.data_manager.DataManager method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.html#pygpe.spintwo.wavefunction.Wavefunction.__init__">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.__init__">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -294,13 +308,13 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.add_noise.html#pygpe.scalar.wavefunction.Wavefunction.add_noise">add_noise() (pygpe.scalar.wavefunction.Wavefunction method)</a>
-</li>
-      <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components.html#pygpe.spinhalf.wavefunction.Wavefunction.add_noise_to_components">add_noise_to_components() (pygpe.spinhalf.wavefunction.Wavefunction method)</a>
 
       <ul>
-        <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.add_noise_to_components.html#pygpe.spinone.wavefunction.Wavefunction.add_noise_to_components">(pygpe.spinone.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.add_noise">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.add_noise_to_components.html#pygpe.spintwo.wavefunction.Wavefunction.add_noise_to_components">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.add_noise.html#pygpe.spinone.wavefunction.SpinOneWavefunction.add_noise">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
+</li>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.add_noise.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.add_noise">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -308,11 +322,11 @@
       <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.apply_phase.html#pygpe.scalar.wavefunction.Wavefunction.apply_phase">apply_phase() (pygpe.scalar.wavefunction.Wavefunction method)</a>
 
       <ul>
-        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.apply_phase.html#pygpe.spinhalf.wavefunction.Wavefunction.apply_phase">(pygpe.spinhalf.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.apply_phase">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.apply_phase.html#pygpe.spinone.wavefunction.Wavefunction.apply_phase">(pygpe.spinone.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.apply_phase.html#pygpe.spinone.wavefunction.SpinOneWavefunction.apply_phase">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.apply_phase.html#pygpe.spintwo.wavefunction.Wavefunction.apply_phase">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.apply_phase.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.apply_phase">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -334,7 +348,15 @@
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.density.html#pygpe.scalar.wavefunction.Wavefunction.density">density() (pygpe.scalar.wavefunction.Wavefunction method)</a>
+
+      <ul>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.density">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.density.html#pygpe.spinone.wavefunction.SpinOneWavefunction.density">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
+</li>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.density.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.density">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -344,11 +366,11 @@
       <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.fft.html#pygpe.scalar.wavefunction.Wavefunction.fft">fft() (pygpe.scalar.wavefunction.Wavefunction method)</a>
 
       <ul>
-        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.fft.html#pygpe.spinhalf.wavefunction.Wavefunction.fft">(pygpe.spinhalf.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.fft">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.fft.html#pygpe.spinone.wavefunction.Wavefunction.fft">(pygpe.spinone.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.fft.html#pygpe.spinone.wavefunction.SpinOneWavefunction.fft">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.fft.html#pygpe.spintwo.wavefunction.Wavefunction.fft">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.fft.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.fft">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -368,11 +390,11 @@
       <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.ifft.html#pygpe.scalar.wavefunction.Wavefunction.ifft">ifft() (pygpe.scalar.wavefunction.Wavefunction method)</a>
 
       <ul>
-        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.ifft.html#pygpe.spinhalf.wavefunction.Wavefunction.ifft">(pygpe.spinhalf.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.ifft">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.ifft.html#pygpe.spinone.wavefunction.Wavefunction.ifft">(pygpe.spinone.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.ifft.html#pygpe.spinone.wavefunction.SpinOneWavefunction.ifft">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
 </li>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.ifft.html#pygpe.spintwo.wavefunction.Wavefunction.ifft">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.ifft.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.ifft">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -401,23 +423,31 @@
         <li><a href="reference/generated/pygpe.spintwo.data_manager.DataManager.save_wavefunction.html#pygpe.spintwo.data_manager.DataManager.save_wavefunction">(pygpe.spintwo.data_manager.DataManager method)</a>
 </li>
       </ul></li>
+      <li><a href="reference/generated/pygpe.scalar.wavefunction.ScalarWavefunction.html#pygpe.scalar.wavefunction.ScalarWavefunction">ScalarWavefunction (class in pygpe.scalar.wavefunction)</a>
+</li>
+      <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.set_ground_state.html#pygpe.spinone.wavefunction.SpinOneWavefunction.set_ground_state">set_ground_state() (pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
+
+      <ul>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_ground_state.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_ground_state">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.set_custom_components.html#pygpe.spinone.wavefunction.Wavefunction.set_custom_components">set_custom_components() (pygpe.spinone.wavefunction.Wavefunction method)</a>
-
-      <ul>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.set_custom_components.html#pygpe.spintwo.wavefunction.Wavefunction.set_custom_components">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
-</li>
-      </ul></li>
-      <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.set_ground_state.html#pygpe.spinone.wavefunction.Wavefunction.set_ground_state">set_ground_state() (pygpe.spinone.wavefunction.Wavefunction method)</a>
-
-      <ul>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.set_ground_state.html#pygpe.spintwo.wavefunction.Wavefunction.set_ground_state">(pygpe.spintwo.wavefunction.Wavefunction method)</a>
-</li>
-      </ul></li>
       <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html#pygpe.scalar.wavefunction.Wavefunction.set_wavefunction">set_wavefunction() (pygpe.scalar.wavefunction.Wavefunction method)</a>
+
+      <ul>
+        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction.set_wavefunction">(pygpe.spinhalf.wavefunction.SpinHalfWavefunction method)</a>
 </li>
-      <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components.html#pygpe.spinhalf.wavefunction.Wavefunction.set_wavefunction_components">set_wavefunction_components() (pygpe.spinhalf.wavefunction.Wavefunction method)</a>
+        <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.set_wavefunction.html#pygpe.spinone.wavefunction.SpinOneWavefunction.set_wavefunction">(pygpe.spinone.wavefunction.SpinOneWavefunction method)</a>
+</li>
+        <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_wavefunction.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction.set_wavefunction">(pygpe.spintwo.wavefunction.SpinTwoWavefunction method)</a>
+</li>
+      </ul></li>
+      <li><a href="reference/generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html#pygpe.spinhalf.wavefunction.SpinHalfWavefunction">SpinHalfWavefunction (class in pygpe.spinhalf.wavefunction)</a>
+</li>
+      <li><a href="reference/generated/pygpe.spinone.wavefunction.SpinOneWavefunction.html#pygpe.spinone.wavefunction.SpinOneWavefunction">SpinOneWavefunction (class in pygpe.spinone.wavefunction)</a>
+</li>
+      <li><a href="reference/generated/pygpe.spintwo.wavefunction.SpinTwoWavefunction.html#pygpe.spintwo.wavefunction.SpinTwoWavefunction">SpinTwoWavefunction (class in pygpe.spintwo.wavefunction)</a>
 </li>
       <li><a href="reference/generated/pygpe.scalar.evolution.step_wavefunction.html#pygpe.scalar.evolution.step_wavefunction">step_wavefunction() (in module pygpe.scalar.evolution)</a>
 
@@ -435,22 +465,6 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/generated/pygpe.shared.vortices.vortex_phase_profile.html#pygpe.shared.vortices.vortex_phase_profile">vortex_phase_profile() (in module pygpe.shared.vortices)</a>
 </li>
-  </ul></td>
-</tr></table>
-
-<h2 id="W">W</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/generated/pygpe.scalar.wavefunction.Wavefunction.html#pygpe.scalar.wavefunction.Wavefunction">Wavefunction (class in pygpe.scalar.wavefunction)</a>
-
-      <ul>
-        <li><a href="reference/generated/pygpe.spinhalf.wavefunction.Wavefunction.html#pygpe.spinhalf.wavefunction.Wavefunction">(class in pygpe.spinhalf.wavefunction)</a>
-</li>
-        <li><a href="reference/generated/pygpe.spinone.wavefunction.Wavefunction.html#pygpe.spinone.wavefunction.Wavefunction">(class in pygpe.spinone.wavefunction)</a>
-</li>
-        <li><a href="reference/generated/pygpe.spintwo.wavefunction.Wavefunction.html#pygpe.spintwo.wavefunction.Wavefunction">(class in pygpe.spintwo.wavefunction)</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -472,6 +486,11 @@
           
             <div class="bd-sidebar-secondary bd-toc">
               
+<div class="toc-item">
+  
+<div id="searchbox"></div>
+</div>
+
 <div class="toc-item">
   
 </div>
@@ -497,7 +516,8 @@
   
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+  <script src="_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
 
   <footer class="bd-footer"><div class="bd-footer__inner container">
   
@@ -512,9 +532,19 @@
   </div>
   
   <div class="footer-item">
+    <p class="theme-version">
+    Built with the
+    <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">
+        PyData Sphinx Theme
+    </a>
+    0.12.0.
+</p>
+  </div>
+  
+  <div class="footer-item">
     
 <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
 
   </div>

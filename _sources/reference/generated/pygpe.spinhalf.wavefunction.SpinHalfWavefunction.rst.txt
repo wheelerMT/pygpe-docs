@@ -1,0 +1,28 @@
+﻿pygpe.spinhalf.wavefunction.SpinHalfWavefunction
+================================================
+
+.. currentmodule:: pygpe.spinhalf.wavefunction
+
+.. autoclass:: SpinHalfWavefunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SpinHalfWavefunction.__init__
+      ~SpinHalfWavefunction.add_noise
+      ~SpinHalfWavefunction.apply_phase
+      ~SpinHalfWavefunction.density
+      ~SpinHalfWavefunction.fft
+      ~SpinHalfWavefunction.ifft
+      ~SpinHalfWavefunction.set_wavefunction
+   
+   
+
+   
+   
+   

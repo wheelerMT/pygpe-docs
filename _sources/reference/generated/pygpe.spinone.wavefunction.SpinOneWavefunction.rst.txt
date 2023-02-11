@@ -1,0 +1,29 @@
+﻿pygpe.spinone.wavefunction.SpinOneWavefunction
+==============================================
+
+.. currentmodule:: pygpe.spinone.wavefunction
+
+.. autoclass:: SpinOneWavefunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SpinOneWavefunction.__init__
+      ~SpinOneWavefunction.add_noise
+      ~SpinOneWavefunction.apply_phase
+      ~SpinOneWavefunction.density
+      ~SpinOneWavefunction.fft
+      ~SpinOneWavefunction.ifft
+      ~SpinOneWavefunction.set_ground_state
+      ~SpinOneWavefunction.set_wavefunction
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+﻿pygpe.spinone.wavefunction.SpinOneWavefunction.add\_noise
+=========================================================
+
+.. currentmodule:: pygpe.spinone.wavefunction
+
+.. automethod:: SpinOneWavefunction.add_noise
