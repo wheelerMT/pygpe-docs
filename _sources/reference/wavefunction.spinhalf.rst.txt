@@ -34,7 +34,7 @@ The `set_wavefunction` method is used to set the initial state of the two-compon
 The `add_noise` method adds noise to each grid point of the wavefunction for the specified components.
 The noise is drawn from a uniform distribution with the mean and standard deviation specified in the function signature.
 Finally, `apply_phase` applies a user-defined phase to the specified wavefunction components as
-:math:`\psi_m\rightarrow\psi_m e^{i\phi}` for phase :math:`\phi` and component :math:`m \in \{+, 0, -\}`.
+:math:`\psi_m\rightarrow\psi_m e^{i\phi}` for phase :math:`\phi` and component :math:`m \in \{1, 2\}`.
 
 Other methods
 -------------

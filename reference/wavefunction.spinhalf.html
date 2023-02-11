@@ -46,7 +46,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="pygpe.spinhalf.wavefunction.SpinHalfWavefunction" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html" />
-    <link rel="prev" title="pygpe.scalar.wavefunction.Wavefunction.density" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html" />
+    <link rel="prev" title="pygpe.scalar.wavefunction.ScalarWavefunction.density" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.density.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -259,12 +259,12 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="wavefunction.html">Wavefunction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="wavefunction.scalar.html">Scalar BEC wavefunction</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.html">pygpe.scalar.wavefunction.ScalarWavefunction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html">pygpe.scalar.wavefunction.Wavefunction.set_wavefunction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.add_noise.html">pygpe.scalar.wavefunction.Wavefunction.add_noise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.apply_phase.html">pygpe.scalar.wavefunction.Wavefunction.apply_phase</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.fft.html">pygpe.scalar.wavefunction.Wavefunction.fft</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.ifft.html">pygpe.scalar.wavefunction.Wavefunction.ifft</a></li>
-<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html">pygpe.scalar.wavefunction.Wavefunction.density</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction.html">pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.add_noise.html">pygpe.scalar.wavefunction.ScalarWavefunction.add_noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase.html">pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.fft.html">pygpe.scalar.wavefunction.ScalarWavefunction.fft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.ifft.html">pygpe.scalar.wavefunction.ScalarWavefunction.ifft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.density.html">pygpe.scalar.wavefunction.ScalarWavefunction.density</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Two-component BEC wavefunction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -417,7 +417,7 @@ manipulating and using the wavefunction.</p>
 <p>The <cite>add_noise</cite> method adds noise to each grid point of the wavefunction for the specified components.
 The noise is drawn from a uniform distribution with the mean and standard deviation specified in the function signature.
 Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified wavefunction components as
-<span class="math notranslate nohighlight">\(\psi_m\rightarrow\psi_m e^{i\phi}\)</span> for phase <span class="math notranslate nohighlight">\(\phi\)</span> and component <span class="math notranslate nohighlight">\(m \in \{+, 0, -\}\)</span>.</p>
+<span class="math notranslate nohighlight">\(\psi_m\rightarrow\psi_m e^{i\phi}\)</span> for phase <span class="math notranslate nohighlight">\(\phi\)</span> and component <span class="math notranslate nohighlight">\(m \in \{1, 2\}\)</span>.</p>
 </section>
 <section id="other-methods">
 <h3>Other methods<a class="headerlink" href="#other-methods" title="Permalink to this heading">#</a></h3>
@@ -451,11 +451,11 @@ Finally, <cite>apply_phase</cite> applies a user-defined phase to the specified 
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="generated/pygpe.scalar.wavefunction.Wavefunction.density.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="generated/pygpe.scalar.wavefunction.ScalarWavefunction.density.html" title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">pygpe.scalar.wavefunction.Wavefunction.density</p>
+          <p class="prev-next-title">pygpe.scalar.wavefunction.ScalarWavefunction.density</p>
       </div>
   </a>
   <a class='right-next' id="next-link" href="generated/pygpe.spinhalf.wavefunction.SpinHalfWavefunction.html" title="next page">
