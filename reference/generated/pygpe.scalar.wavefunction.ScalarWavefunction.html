@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>pygpe.scalar.wavefunction.ScalarWavefunction &#8212; PyGPE 1.1.1 documentation</title>
+    <title>pygpe.scalar.wavefunction.ScalarWavefunction &#8212; PyGPE 1.1.2 documentation</title>
   
   
   
@@ -44,7 +44,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/pygpe.scalar.wavefunction.ScalarWavefunction';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="pygpe.scalar.wavefunction.Wavefunction.set_wavefunction" href="pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html" />
+    <link rel="next" title="pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction" href="pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction.html" />
     <link rel="prev" title="Scalar BEC wavefunction" href="../wavefunction.scalar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
@@ -101,7 +101,7 @@
 
   
   
-    <p class="title logo__title">PyGPE 1.1.1 documentation</p>
+    <p class="title logo__title">PyGPE 1.1.2 documentation</p>
   
 </a>
     
@@ -258,12 +258,12 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../wavefunction.html">Wavefunction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../wavefunction.scalar.html">Scalar BEC wavefunction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">pygpe.scalar.wavefunction.ScalarWavefunction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html">pygpe.scalar.wavefunction.Wavefunction.set_wavefunction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.Wavefunction.add_noise.html">pygpe.scalar.wavefunction.Wavefunction.add_noise</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.Wavefunction.apply_phase.html">pygpe.scalar.wavefunction.Wavefunction.apply_phase</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.Wavefunction.fft.html">pygpe.scalar.wavefunction.Wavefunction.fft</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.Wavefunction.ifft.html">pygpe.scalar.wavefunction.Wavefunction.ifft</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.Wavefunction.density.html">pygpe.scalar.wavefunction.Wavefunction.density</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction.html">pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.add_noise.html">pygpe.scalar.wavefunction.ScalarWavefunction.add_noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase.html">pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.fft.html">pygpe.scalar.wavefunction.ScalarWavefunction.fft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.ifft.html">pygpe.scalar.wavefunction.ScalarWavefunction.ifft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.density.html">pygpe.scalar.wavefunction.ScalarWavefunction.density</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../wavefunction.spinhalf.html">Two-component BEC wavefunction</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -414,13 +414,13 @@ functions for manipulating and using the wavefunction.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pygpe.scalar.wavefunction.ScalarWavefunction.__init__" title="pygpe.scalar.wavefunction.ScalarWavefunction.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(grid)</p></td>
 <td><p>Constructs the wavefunction object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_noise</span></code>(mean, std_dev)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.add_noise.html#pygpe.scalar.wavefunction.ScalarWavefunction.add_noise" title="pygpe.scalar.wavefunction.ScalarWavefunction.add_noise"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_noise</span></code></a>(mean, std_dev)</p></td>
 <td><p>Adds noise to the wavefunction using a normal distribution.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">apply_phase</span></code>(phase)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase.html#pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase" title="pygpe.scalar.wavefunction.ScalarWavefunction.apply_phase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">apply_phase</span></code></a>(phase)</p></td>
 <td><p>Applies a phase to the wavefunction.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">density</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.density.html#pygpe.scalar.wavefunction.ScalarWavefunction.density" title="pygpe.scalar.wavefunction.ScalarWavefunction.density"><code class="xref py py-obj docutils literal notranslate"><span class="pre">density</span></code></a>()</p></td>
 <td><p><dl class="field-list simple">
 <dt class="field-odd">return<span class="colon">:</span></dt>
 <dd class="field-odd"><p>An array of the condensate density.</p>
@@ -428,13 +428,13 @@ functions for manipulating and using the wavefunction.</p>
 </dl>
 </p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fft</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.fft.html#pygpe.scalar.wavefunction.ScalarWavefunction.fft" title="pygpe.scalar.wavefunction.ScalarWavefunction.fft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fft</span></code></a>()</p></td>
 <td><p>Fourier transforms real-space component and updates Fourier-space component.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifft</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.ifft.html#pygpe.scalar.wavefunction.ScalarWavefunction.ifft" title="pygpe.scalar.wavefunction.ScalarWavefunction.ifft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifft</span></code></a>()</p></td>
 <td><p>Inverse Fourier transforms Fourier-space component and updates real-space component.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_wavefunction</span></code>(wavefunction)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction.html#pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction" title="pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_wavefunction</span></code></a>(wavefunction)</p></td>
 <td><p>Sets the wavefunction to the specified state.</p></td>
 </tr>
 </tbody>
@@ -458,10 +458,10 @@ functions for manipulating and using the wavefunction.</p>
           <p class="prev-next-title">Scalar BEC wavefunction</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="pygpe.scalar.wavefunction.Wavefunction.set_wavefunction.html" title="next page">
+  <a class='right-next' id="next-link" href="pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">pygpe.scalar.wavefunction.Wavefunction.set_wavefunction</p>
+      <p class="prev-next-title">pygpe.scalar.wavefunction.ScalarWavefunction.set_wavefunction</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
