@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>PyGPE: An introduction &#8212; PyGPE 1.1.4 documentation</title>
+    <title>PyGPE: An introduction &#8212; PyGPE 1.2.0 documentation</title>
   
   
   
@@ -102,7 +102,7 @@
 
   
   
-    <p class="title logo__title">PyGPE 1.1.4 documentation</p>
+    <p class="title logo__title">PyGPE 1.2.0 documentation</p>
   
 </a>
     
@@ -449,8 +449,7 @@ Once the initial grid, wavefunction and condensate parameters have been defined,
 we instantiate a DataManager class,
 which saves all the initial details of the system.
 To do this, we write:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">gpe</span><span class="o">.</span><span class="n">DataManager</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;data.hdf5&#39;</span><span class="p">,</span> <span class="n">data_path</span><span class="o">=</span><span class="s1">&#39;../../data/&#39;</span><span class="p">,</span>
-<span class="n">wfn</span><span class="o">=</span><span class="n">wavefunction</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">gpe</span><span class="o">.</span><span class="n">DataManager</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;data.hdf5&#39;</span><span class="p">,</span> <span class="n">data_path</span><span class="o">=</span><span class="s1">&#39;../../data/&#39;</span><span class="p">,</span> <span class="n">wfn</span><span class="o">=</span><span class="n">wavefunction</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The constructor takes four parameters: <cite>filename</cite>, the path where we want to
@@ -479,9 +478,10 @@ To step the wavefunction forward for a set number of time steps we include a for
 </section>
 <section id="imaginary-complex-time-evolution">
 <h2>Imaginary/complex time evolution<a class="headerlink" href="#imaginary-complex-time-evolution" title="Permalink to this heading">#</a></h2>
-<p>Imaginary time evolution is an extremely useful way of computing ground states of Bose-Einstein condensate systems and
-PyGPE readily supports it.
-To use imaginary time evolution we simply have to define an imaginary time step in our parameters dictionary:</p>
+<p>Imaginary time evolution is an extremely useful way of computing ground states
+of Bose-Einstein condensate systems and PyGPE readily supports it.
+To use imaginary time evolution we simply have to define an imaginary time step
+in our parameters dictionary:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;dt&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="mf">1e-2</span><span class="p">}</span>
 </pre></div>
 </div>
