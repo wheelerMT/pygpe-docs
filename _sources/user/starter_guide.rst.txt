@@ -168,8 +168,7 @@ we instantiate a DataManager class,
 which saves all the initial details of the system.
 To do this, we write::
 
-    data = gpe.DataManager(filename='data.hdf5', data_path='../../data/',
-    wfn=wavefunction, params=params)
+    data = gpe.DataManager(filename='data.hdf5', data_path='../../data/', wfn=wavefunction, params=params)
 
 The constructor takes four parameters: `filename`, the path where we want to
 save the data, `data_path`, the wavefunction object, `wfn`, and the
@@ -199,9 +198,10 @@ That's it! All the evolution happens behind the `step_wavefunction` method.
 Imaginary/complex time evolution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Imaginary time evolution is an extremely useful way of computing ground states of Bose-Einstein condensate systems and
-PyGPE readily supports it.
-To use imaginary time evolution we simply have to define an imaginary time step in our parameters dictionary::
+Imaginary time evolution is an extremely useful way of computing ground states
+of Bose-Einstein condensate systems and PyGPE readily supports it.
+To use imaginary time evolution we simply have to define an imaginary time step
+in our parameters dictionary::
 
     params = {"dt": -1j * 1e-2}
 
