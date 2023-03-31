@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>PyGPE: An introduction &#8212; PyGPE 1.1.3 documentation</title>
+    <title>PyGPE: An introduction &#8212; PyGPE 1.1.2 documentation</title>
   
   
   
@@ -102,7 +102,7 @@
 
   
   
-    <p class="title logo__title">PyGPE 1.1.3 documentation</p>
+    <p class="title logo__title">PyGPE 1.1.2 documentation</p>
   
 </a>
     
@@ -445,16 +445,21 @@ subsequently adds numerical noise drawn from a normal distribution with mean
 <section id="setting-up-the-data-manager">
 <h3>Setting up the data manager<a class="headerlink" href="#setting-up-the-data-manager" title="Permalink to this heading">#</a></h3>
 <p>PyGPE provides an easy way to save data throughout the simulation.
-Once the initial grid, wavefunction and condensate parameters have been defined we an instantiate a DataManager class,
+Once the initial grid, wavefunction and condensate parameters have been defined,
+we instantiate a DataManager class,
 which saves all the initial details of the system.
 To do this, we write:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">gpe</span><span class="o">.</span><span class="n">DataManager</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;data.hdf5&#39;</span><span class="p">,</span> <span class="n">data_path</span><span class="o">=</span><span class="s1">&#39;../../data/&#39;</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">save_initial_parameters</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">wavefunction</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">gpe</span><span class="o">.</span><span class="n">DataManager</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;data.hdf5&#39;</span><span class="p">,</span> <span class="n">data_path</span><span class="o">=</span><span class="s1">&#39;../../data/&#39;</span><span class="p">,</span>
+<span class="n">wfn</span><span class="o">=</span><span class="n">wavefunction</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The constructor takes two parameters: <cite>filename</cite> and the path where we want to save the data, <cite>data_path</cite>.
-We then call <cite>data.save_initial_parameters</cite> to save our initial grid, wavefunction and parameters to the dataset.
-Finally, to save the current wavefunction to the dataset we simply write:</p>
+<p>The constructor takes four parameters: <cite>filename</cite>, the path where we want to
+save the data, <cite>data_path</cite>, the wavefunction object, <cite>wfn</cite>, and the
+parameters’ dictionary, <cite>params</cite>.
+Calling the constructor automatically generates the file and populates it with
+the parameters of our system.</p>
+<p>To save the current wavefunction object to the dataset (i.e., whilst a simulation
+is running), we simply write:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">save_wavefunction</span><span class="p">(</span><span class="n">wavefunction</span><span class="p">)</span>
 </pre></div>
 </div>

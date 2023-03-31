@@ -14,7 +14,6 @@
    .. autosummary::
    
       ~DataManager.__init__
-      ~DataManager.save_initial_parameters
       ~DataManager.save_wavefunction
    
    
