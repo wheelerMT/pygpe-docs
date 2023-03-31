@@ -1,0 +1,6 @@
+﻿pygpe.scalar.wavefunction.ScalarWavefunction.fft
+================================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. automethod:: ScalarWavefunction.fft

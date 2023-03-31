@@ -1,0 +1,6 @@
+﻿pygpe.scalar.wavefunction.ScalarWavefunction.apply\_phase
+=========================================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. automethod:: ScalarWavefunction.apply_phase

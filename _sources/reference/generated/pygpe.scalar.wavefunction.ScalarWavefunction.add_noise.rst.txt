@@ -1,0 +1,6 @@
+﻿pygpe.scalar.wavefunction.ScalarWavefunction.add\_noise
+=======================================================
+
+.. currentmodule:: pygpe.scalar.wavefunction
+
+.. automethod:: ScalarWavefunction.add_noise
